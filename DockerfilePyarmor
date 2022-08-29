@@ -1,0 +1,6 @@
+FROM python:3.9.10-slim
+ADD . /app
+WORKDIR /app
+RUN apt update -y
+RUN pip install pyarmor
+RUN pyarmor init --entry=main.py && pyarmor config --restrict=0 --manifest "global-include *.py, global-include alembic.ini, global-include *sql, global-include .env, global-include *.mako, prune .venv" && pyarmor build

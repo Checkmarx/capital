@@ -1,0 +1,15 @@
+Link to the vulnerabillity:
+https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa5-broken-function-level-authorization.md
+
+Prequisits:
+1. Create a new endpoint that only admins can access ("/admin") which will not be part of the spesification
+2. Present all users details in the response of this endpoint along with a flag
+
+Plan:
+1. User will have to guess that "/admin" exits (or understand it exists by enumarate endpoints by
+using the hints "endpoints.txt")
+2. This endpoint will be open to the world and any user will be able to reach it -
+There wont be any verification that only admins can reach it
+3. The response will include all users details and the flag
+
+flag{I_aM_Th3_aDm1n_H3r3!}

@@ -1,0 +1,32 @@
+Link to the vulnerabillity:
+https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa1-broken-object-level-authorization.md
+
+Prequisits:
+ - Add "id" field for each user, this should be returned in every user details responses like:
+   User register response
+   User login response
+ - The "id" should be also added to the db in every table the user info is presented and be retivred in every response
+ - The "id" should be also added to the API spec file 
+
+1. Create user A -> register endpoint (POST /users)  
+2. Create user B -> register endpoint (POST /users) 
+3. Create article with user B -> (POST /articles)
+3. Login to user A -> login with remember token endpoint (POST /users/login)
+
+Plan:
+OPTION 1:
+Update user B (id of user B) email -> update user endpoint (PUT /user) - We will need to change the code so it will not verify the user trying to make the update
+(in case you are authnticated you should be able to update any user details)
+get the flag:
+if the id of the authnticated user != the id he is trying to change -> get flag
+OPTION 2:
+Update other user article ->  update article endpoint (PUT /articles/{article_slug}) [right now - "you are not an author of this article"] - 
+We will need to change the code so it will not verify the user
+(in case you are authnticated you should be able to update any user details)
+if the id of the authnticated user != the id he is trying to change -> get flag
+OPTION 3:
+Delete other user article ->  delete article endpoint (DEL /articles/{article_slug}) [right now - "you are not an author of this article"]
+if the id of the authnticated user != the id he is trying to change -> get flag
+OPTION 4: 
+Delete other user comment ->  delete comment endpoint (DEL /articles/{article_slug}/comments/{comment_id}) [right now - "you are not an author of this article"]
+if the id of the authnticated user != the id he is trying to change -> get flag

@@ -1,0 +1,15 @@
+Link to the vulnerabillity:
+https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa2-broken-user-authentication.md
+
+Preqisitis:
+- Create few users (admin/password, bob/marly, etc)
+- Create few articles with admin user
+
+Plan:
+1. The user will have to understand that "admin" user exists and try to login as "admin"
+2. He will have the user name, and have to guess the password, so he will try few popular passwords
+3. He can use common_passwords.txt that will be hint (passwords)
+4. Perform ATO using ZAP/BURP to the login endpoint (POST /users/login) with this list
+3. Get 200 for admin/password
+4. Login as admin and get the flag (if username == "admin@gmail.com" AND password == "password"->
+   return the flag in the response)

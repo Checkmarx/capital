@@ -1,0 +1,14 @@
+Flag: flag{1nsUfF1C3nT_L0gG1nG}
+
+Link to the vulnerabillity:
+https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa7-security-misconfiguration.md
+
+Prequisits:
+ - Complete BrokenAuth risk
+
+Plan:
+1. The user will authenticated to Pikachu user (via BF)
+2. The response will include a reference to endpoint in the application
+3. This endpoint will show an pop up of lack of logging and showing the flag
+
+
