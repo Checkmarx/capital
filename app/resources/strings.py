@@ -1,5 +1,4 @@
 # API messages
-import base64
 
 USER_DOES_NOT_EXIST_ERROR = "user does not exist"
 ARTICLE_DOES_NOT_EXIST_ERROR = "article does not exist"
@@ -30,47 +29,46 @@ COMMENT_DOES_NOT_EXIST = "comment does not exist"
 AUTHENTICATION_REQUIRED = "authentication required"
 
 
-### Flags
+# Flags
 
 def BrokenFunctionLevelAuthorization():
-    return base64.b16decode("666C61677B42464C345F495F614D5F5468335F61446D316E5F48337233217D").decode("utf-8")
+    return "flag{BFL4_I_aM_Th3_aDm1n_H3r3!}"
 
 
 def BrokenUserAuthentication():
-    return base64.b16decode("666C61677B6272306B336E5F755333725F34757468456E7431634174316F4E7D").decode("utf-8")
+    return "flag{br0k3n_uS3r_4uthEnt1cAt1oN}"
 
 
 def BOLA():
-    return base64.b16decode("666C61677B42306C4121212121217D").decode("utf-8")
+    return "flag{B0lA!!!!!}"
 
 
 def ImproperAssetsManagement():
-    return base64.b16decode("666C61677B496D7072307065525F4173733374735F4D616E4167336D336E747D").decode("utf-8")
+    return "flag{Impr0peR_Ass3ts_ManAg3m3nt}"
 
 
 def Injection():
-    return base64.b16decode("666C61677B316E6A65637431306E5F4170317D").decode("utf-8")
+    return "flag{1nject10n_Ap1}"
 
 
 def ExcessiveDataExposure():
-    return base64.b16decode("666C61677B3378633373733176335F646154615F587030737572337D").decode("utf-8")
+    return "flag{3xc3ss1v3_daTa_Xp0sur3}"
 
 
 def LackOf():
-    return base64.b16decode("666C61677B4C34634B5F30665F5233733075726333535F265F723474335F4C316D3174316E677D").decode(
-        "utf-8")
+    return "flag{L4cK_0f_R3s0urc3S_&_r4t3_L1m1t1ng}"
 
 
 def MassAssignment():
-    return base64.b16decode("666C61677B4D3473535F41735331676E6D336E747D").decode("utf-8")
+    return "flag{M4sS_AsS1gnm3nt}"
 
 
 def InsufficientLogging():
-    return base64.b16decode("666C61677B496E735566463143336E545F4C306747316E477D").decode("utf-8")
+    return "flag{InsUfF1C3nT_L0gG1nG}"
 
 
-def SecMiss():  # not in used embeded
-    return base64.b16decode("666C61677B3565435F4D317363306E4631677D").decode("utf-8")
+def SecMiss():  # not in used in app (external flag)
+    return "flag{5eC_M1sc0nF1g}"
 
 
 # Description
