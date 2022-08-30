@@ -18,7 +18,7 @@ Description
 c{api}tal is a vulnerable API application based on the OWASP top 10 API risks.
 It is built with Python (FastAPI) and JS (React) and it includes 10 API challenges. 
 c{api}tal was created by CheckMarx Research team in order to provide users with a playground in which they could learn and develop their API Security skills.
-You can use c{api}tal to learn and exploit API Security vulnerabilities!
+You can use c{api}tal to learn and exploit API Security vulnerabilities
 
 c{api}tal can also be used for conducting your own API Security CTF event.
 
