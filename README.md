@@ -58,6 +58,7 @@ Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example
 </p>
 
 To run the web application in debug:
+----------
 
 First, run ``PostgreSQL``, set environment variables and create database:
 
@@ -66,8 +67,7 @@ First, run ``PostgreSQL``, set environment variables and create database:
     export POSTGRES_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' pgdb)
     createdb --host=$POSTGRES_HOST --port=$POSTGRES_PORT --username=$POSTGRES_USER $POSTGRES_DB
 
-###Backend Setup
-####[Option 1] Run locally 
+[Option 1] Run locally 
 
 Then run the following commands to bootstrap your environment:
 
@@ -90,7 +90,7 @@ Then run the backend server:
 
     python3 main.py
 
-####[Option 2] Run backend using docker
+[Option 2] Run backend using docker
 Run the backend using docker build:
  
     docker build . -t capital
