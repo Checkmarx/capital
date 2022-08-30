@@ -3,8 +3,6 @@ COPY app /capital/app
 COPY requirements.txt /capital
 COPY alembic.ini /capital
 COPY main.py /capital
-#localhost is only if use it locally (otherwise should have it loaded using docker-compose)
-ENV DATABASE_URL=postgresql://postgres:postgres@localhost:5432/rwdb
 WORKDIR /capital
 RUN apt update -y
 RUN apt install -y procps
