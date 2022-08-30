@@ -1,9 +1,9 @@
 FROM python:3.9.10-slim
-ADD dist /app
-ADD requirements.txt /app/requirements.txt
-ADD alembic.ini /app/alembic.ini
-ADD app/db/migrations/versions app/app/db/migrations/versions
-WORKDIR /app
+COPY app /capital/app
+COPY requirements.txt /capital
+COPY alembic.ini /capital
+COPY main.py /capital
+WORKDIR /capital
 RUN apt update -y
 RUN apt install -y procps
 RUN pip install -r requirements.txt

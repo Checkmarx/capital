@@ -43,9 +43,10 @@ create and delete comments, follow other users, and more.
 Quickstart
 ----------
 
-Run the application using docker-compose:
+Run the full application using docker-compose:
  
     docker-compose up -d
+
 
 The backend will be running on http://localhost:8000/ <br>
 The frontend will be running on http://localhost:4100/ <br>
@@ -64,6 +65,9 @@ First, run ``PostgreSQL``, set environment variables and create database:
     docker run --name pgdb --rm -p 5432:5432 -e POSTGRES_USER="$POSTGRES_USER" -e POSTGRES_PASSWORD="$POSTGRES_PASSWORD" -e POSTGRES_DB="$POSTGRES_DB" postgres
     export POSTGRES_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' pgdb)
     createdb --host=$POSTGRES_HOST --port=$POSTGRES_PORT --username=$POSTGRES_USER $POSTGRES_DB
+
+###Backend Setup
+####[Option 1] Run locally 
 
 Then run the following commands to bootstrap your environment:
 
@@ -85,6 +89,13 @@ Then create ``.env`` file in project root and set environment variables for appl
 Then run the backend server:
 
     python3 main.py
+
+####[Option 2] Run backend using docker
+Run the backend using docker build:
+ 
+    docker build . -t capital
+    docker run -p 8000:8000  -e DATABASE_URL=postgresql://postgres:postgres@host.docker.internal:5432/rwdb --rm --name backend-capital capital
+
 
 Run tests
 ---------
