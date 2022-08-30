@@ -43,9 +43,15 @@ create and delete comments, follow other users, and more.
 Quickstart
 ----------
 
-Run the application using docker-compose:
+Run the full application using docker-compose:
  
     docker-compose up -d
+
+Run the backend using docker build:
+ 
+    docker run --rm --name test -p 8000:8000 capital
+    docker run --net=host --rm --name ctf-capital -p 8000:8000 capital
+
 
 The backend will be running on http://localhost:8000/ <br>
 The frontend will be running on http://localhost:4100/ <br>
