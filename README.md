@@ -23,9 +23,6 @@ You can use c{api}tal to learn and exploit API Security vulnerabilities
 c{api}tal can also be used for conducting your own API Security CTF event.
 
 Visit [capital-ctf.com](https://www.capital-ctf.com/) to learn about the vulnerabilities and the challenges.
-<p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/challange.PNG#center" width="800" height="600" />
-</p>
 
 Features:
 ----------
@@ -49,6 +46,15 @@ Quickstart
 Run the application using docker-compose:
  
     docker-compose up -d
+
+The backend will be running on http://localhost:8000/ <br>
+The frontend will be running on http://localhost:4100/ <br>
+Check out the API endpoints specification page at http://localhost:8000/docs <br>
+
+Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example)
+<p align="center">
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
+</p>
 
 To run the web application in debug:
 
