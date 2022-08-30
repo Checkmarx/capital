@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/capital-logo.png#center" width="600" height="300" />
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo.png#center" width="600" height="300" />
 </p>
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
@@ -16,25 +16,25 @@ Quick facts
 Description
 ----------
 c{api}tal is a vulnerable API application based on the OWASP top 10 API risks.
-It is built with Python (FastAPI) and JS (React) and it includes 10 API challnages. 
+It is built with Python (FastAPI) and JS (React) and it includes 10 API challenges. 
 c{api}tal was created by CheckMarx Research team in order to provide users with a playground in which they could learn and develop their API Security skills.
 You can use c{api}tal to learn and exploit API Security vulnerabilities!
 
 c{api}tal can also be used for conducting your own API Security CTF event.
 
-Visit [capital-ctf.com](https://www.capital-ctf.com/) to learn about the vulnerabilities and the challanges.
+Visit [capital-ctf.com](https://www.capital-ctf.com/) to learn about the vulnerabilities and the challenges.
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/api-risks/challange.PNG#center" width="800" height="600" />
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/challange.PNG#center" width="800" height="600" />
 </p>
 
 Features:
 ----------
 
-* Contains 10 challanges based on the OWASP top 10 API risks
-* The applicaiton is built on FastAPI (backend) and React (frontend)
+* Contains 10 challenges based on the OWASP top 10 API risks
+* The application is built on FastAPI (backend) and React (frontend)
 * UI - Blogging website (i.e medium)
-* OpenAPI3 API json spesification file that can be imported as a POSTMAN collection
-* JWT token based authntication (lifetime can be adjusted in app)
+* OpenAPI3 API json specification file that can be imported as a POSTMAN collection
+* JWT token based authentication (lifetime can be adjusted in app)
 
 c{api}tal is a blogging application which allow users to register, create and delete posts, 
 create and delete comments, follow other users, and more.
@@ -46,7 +46,7 @@ create and delete comments, follow other users, and more.
 Quickstart
 ----------
 
-Run the appliaction using docker-compose:
+Run the application using docker-compose:
  
     docker-compose up -d
 
