@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo.png#center" width="600" height="300" />
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
