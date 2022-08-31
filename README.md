@@ -52,7 +52,10 @@ The backend will be running on http://localhost:8000/ <br>
 The frontend will be running on http://localhost:4100/ <br>
 Check out the API endpoints specification page at http://localhost:8000/docs <br>
 
-Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example)
+Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example) <br>
+Import the API collection JSON file to POSTMAN and start generating API requests: <br>
+[click here to download the c{api}tal API json collection file](https://www.capital-ctf.com/files/de1ad03a48959f38c7f131f81f95d42e/capital.postman_collection.json)
+
 <p align="center">
 <img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
 </p>
@@ -171,6 +174,26 @@ Application parts are:
     ├── scripts         
     ├── tests         
     └── main.py          - FastAPI application creation and configuration.
+    
+Referrences
+----------
+c{api}tal CTF event on AppSec Village at DefCon30: <br>
+https://www.appsecvillage.com/events/dc-2022/c%7Bapi%7Dtal-api-security-ctf
+
+Write-up (Credit to Maor Tal): <br>
+Part 1: <br>
+https://medium.com/@maor_59001/defcon-30-appsec-villiage-ctf-writeup-part-1-1730de791f50 <br>
+Part 2: <br>
+https://medium.com/@maor_59001/defcon-30-c-api-tal-ctf-writeup-part-2-ef99a0fc8d28
+
+c{api}tal CTF event sum-up blog: <br>
+TBD
+
+Stickers from DefCon30: <br>
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker1.png" width="300" height="150" />
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker2.png" width="300" height="150" />
+<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker3.jpeg" width="300" height="150" />
+
 
 Development and Bugs
 ----------
@@ -185,4 +208,7 @@ See CONTRIBUTING.md for more information about how to submit them.
 Thanks
 ----------
 
+The application was built base on ``real-world-app`` , make sure to check out their awesome github repo: <br>
+https://github.com/gothinkster/realworld <br>
+Thanks again for contributing to the open-source community! <br>
 Thanks to the community for using and supporting open source software.
