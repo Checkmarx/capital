@@ -2,7 +2,7 @@
 <img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
-[![Docker](https://img.shields.io/badge/docker-support-%2300D1D1)](https://github.com/Checkmarx/capital#Quickstart) 
+[![Docker](https://img.shields.io/badge/docker-support-%2300D1D1)](https://github.com/Checkmarx/capital/tree/capital-dev#quickstart) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Quick facts
