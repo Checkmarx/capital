@@ -2,16 +2,16 @@
 <img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Quick facts
 ----------
 
    - **Name**:      'c{api}tal'
    - **Type**:      Vulnerable API Security application
-   - **License**:   GNU AFFERO GENERAL PUBLIC LICENSE
+   - **License**:   MIT
    - **Language**:  Python, JS
-   - **Author**:    CheckMarx Research team
+   - **Author**:    Checkmarx
    
 Description
 ----------
@@ -208,7 +208,9 @@ See CONTRIBUTING.md for more information about how to submit them.
 Thanks
 ----------
 
-The application was built base on ``real-world-app`` , make sure to check out their awesome github repo: <br>
-https://github.com/gothinkster/realworld <br>
+The application was built base on ``real-world-app`` , we used these awesome repos: <br>
+Backend - FastAPI (Python) <br>
+https://github.com/nsidnev/fastapi-realworld-example-app <br>
+Frontend - React (JS) <br>
+https://github.com/khaledosman/react-redux-realworld-example-app <br>
 Thanks again for contributing to the open-source community! <br>
-Thanks to the community for using and supporting open source software.
