@@ -178,7 +178,7 @@ Referrences
 c{api}tal CTF event on AppSec Village at DefCon30: <br>
 https://www.appsecvillage.com/events/dc-2022/c%7Bapi%7Dtal-api-security-ctf
 
-Write-up (Credit to Maor Tal): <br>
+Write-up (Credit to <a href="https://medium.com/@maor_59001" target="_blank">Maor Tal</a>): <br>
 Part 1: <br>
 https://medium.com/@maor_59001/defcon-30-appsec-villiage-ctf-writeup-part-1-1730de791f50 <br>
 Part 2: <br>
