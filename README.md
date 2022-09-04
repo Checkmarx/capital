@@ -16,10 +16,7 @@ Quick facts
    
 Description
 ----------
-c{api}tal is a vulnerable API application based on the OWASP top 10 API risks.
-It is built with Python (FastAPI) and JS (React) and it includes 10 API challenges. 
-c{api}tal was created by CheckMarx Research team in order to provide users with a playground in which they could learn and develop their API Security skills.
-You can use c{api}tal to learn and exploit API Security vulnerabilities
+The Checkmarx research team created c{api}tal to provide users with an active playground in which they hone their API Security skills. <br> The c{api}tal application contains 10 API challenges which map to the <a href="https://owasp.org/www-project-api-security/" target="_blank">OWASP top 10 API risks</a>. <br> It is built with Python (FastAPI) and JS (React).
 
 c{api}tal can also be used for conducting your own API Security CTF event.
 
@@ -27,12 +24,13 @@ Visit [capital-ctf.com](https://www.capital-ctf.com/) to learn about the vulnera
 
 Features:
 ----------
+Contains 10 challenges based on the <a href="https://owasp.org/www-project-api-security/" target="_blank">OWASP top 10 API risks</a>
 
-* Contains 10 challenges based on the OWASP top 10 API risks
-* The application is built on FastAPI (backend) and React (frontend)
-* UI - Blogging website (i.e medium)
-* OpenAPI3 API json specification file that can be imported as a POSTMAN collection
-* JWT token based authentication (lifetime can be adjusted in app)
+* Built on FastAPI (backend) and React (frontend) 
+* UI - Blogging website (i.e medium) 
+* OpenAPI3 API JSON specification file that can be imported as a POSTMAN collection 
+* JWT token based authentication (lifetime can be adjusted in app) 
+
 
 c{api}tal is a blogging application which allow users to register, create and delete posts, 
 create and delete comments, follow other users, and more.
@@ -209,8 +207,6 @@ Thanks
 ----------
 
 The application was built base on ``real-world-app`` , we used these awesome repos: <br>
-Backend - FastAPI (Python) <br>
-https://github.com/nsidnev/fastapi-realworld-example-app <br>
-Frontend - React (JS) <br>
-https://github.com/khaledosman/react-redux-realworld-example-app <br>
+<a href="https://github.com/nsidnev/fastapi-realworld-example-app" target="_blank">Backend - FastAPI (Python)</a>  <br>
+<a href="https://github.com/khaledosman/react-redux-realworld-example-app" target="_blank">Frontend - React (JS)</a>  <br>
 Thanks again for contributing to the open-source community! <br>
