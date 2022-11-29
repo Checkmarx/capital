@@ -11,9 +11,9 @@ Quick facts
 
    - **Name**:      'c{api}tal'
    - **Type**:      Vulnerable API Security application
-   - **License**:   MIT
+   - **License**:   GNU AFFERO GENERAL PUBLIC LICENSE
    - **Language**:  Python, JS
-   - **Author**:    Checkmarx
+   - **Author**:    Checkmarx Research team
    
 Description
 ----------
