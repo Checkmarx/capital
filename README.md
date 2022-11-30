@@ -198,7 +198,7 @@ Development and Bugs
 ----------
 Found an issue, or have a great idea? Let us know:
 
-* E-mail - ResearchTeam@checkmarx.com
+* E-mail - capital@checkmarx.com
 
 Contributions are appreciated and can be done via GitHub. 
 
