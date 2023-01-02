@@ -1,0 +1,33 @@
+version: '3'
+services:
+  backend:
+    image: appsecvillage22/ctf-backend:latest
+    restart: on-failure
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db/postgres"
+      APP_ENV: "prod"
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:11.5-alpine
+    expose:
+      - "5432"
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@localhost/postgres"
+    healthcheck:
+      test: ["CMD", "psql", "--user=postgres"]
+      interval: 10s
+      timeout: 10s
+      retries: 20
+      start_period: 30s
+  redis:
+    image: appsecvillage22/ctf-redis:latest
+    ports:
+      - "6379:6379"
+  frontend:
+    image: appsecvillage22/ctf-frontend:latest
+    ports:
+      - "4100:4100"
