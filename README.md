@@ -209,6 +209,11 @@ See CONTRIBUTING.md for more information about how to submit them.
 Thanks
 ----------
 
+This project was created by [Ravid Mazon](https://www.linkedin.com/in/ravid-mazon) with the help of these great contributors: 
+[Liad Levy](https://www.linkedin.com/in/liad-levy-93b235211/),
+[Yaniv Nizry](https://www.linkedin.com/in/yaniv-n-8b4a76193/), 
+[Guy Lyuboshits](https://www.linkedin.com/in/guy-lyuboshits-075175165/)
+
 The application was built base on ``real-world-app`` , we used these awesome repos: <br>
 <a href="https://github.com/nsidnev/fastapi-realworld-example-app" target="_blank">Backend - FastAPI (Python)</a>  <br>
 <a href="https://github.com/khaledosman/react-redux-realworld-example-app" target="_blank">Frontend - React (JS)</a>  <br>
