@@ -174,19 +174,21 @@ Application parts are:
     ├── tests         
     └── main.py          - FastAPI application creation and configuration.
     
-Referrences
+Presented At
 ----------
-c{api}tal CTF event on AppSec Village at DefCon30: <br>
-https://www.appsecvillage.com/events/dc-2022/c%7Bapi%7Dtal-api-security-ctf
 
-Write-up (Credit to <a href="https://medium.com/@maor_59001" target="_blank">Maor Tal</a>): <br>
-Part 1: <br>
-https://medium.com/@maor_59001/defcon-30-appsec-villiage-ctf-writeup-part-1-1730de791f50 <br>
-Part 2: <br>
-https://medium.com/@maor_59001/defcon-30-c-api-tal-ctf-writeup-part-2-ef99a0fc8d28
+[Blackhat Europe 2022 Arsenal](https://www.youtube.com/watch?v=OP4X8Sc8hMs)
 
-c{api}tal CTF event sum-up blog: <br>
-TBD
+[AppSec village at DefCon30](https://www.appsecvillage.com/events/dc-2022/c%7Bapi%7Dtal-api-security-ctf)
+
+Write-ups & Referrences
+----------
+[c{api}tal CTF event sum-up blog](https://checkmarx.com/blog/how-we-created-an-api-security-ctf)
+
+A great write-up by Maor Tal: <br>
+[Part 1](https://medium.com/@maor_59001/defcon-30-appsec-villiage-ctf-writeup-part-1-1730de791f50) <br>
+[Part 2](https://medium.com/@maor_59001/defcon-30-c-api-tal-ctf-writeup-part-2-ef99a0fc8d28)
+
 
 Stickers from DefCon30: <br>
 <img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker1.png" width="300" height="150" />
