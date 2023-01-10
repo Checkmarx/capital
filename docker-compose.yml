@@ -1,7 +1,7 @@
 version: '3'
 services:
   backend:
-    image: ravid55590/backend:latest
+    image: capitalapp/backend:latest
     restart: on-failure
     ports:
       - "8000:8000"
@@ -24,10 +24,10 @@ services:
       retries: 20
       start_period: 30s
   redis:
-    image: ravid55590/redis:latest
+    image: capitalapp/redis:latest
     ports:
       - "6379:6379"
   frontend:
-    image: ravid55590/frontend:latest
+    image: capitalapp/frontend:latest
     ports:
       - "4100:4100"
