@@ -2,15 +2,16 @@
 <img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
+[![API Security Top 10](https://img.shields.io/badge/API%20Security-top%2010-blue)](https://github.com/OWASP/API-Security) 
+[![Vulnerable](https://img.shields.io/badge/Vulnerable-by%20design-blue)](https://github.com/Checkmarx/capital#quickstart) 
 [![license](https://img.shields.io/badge/license-AGPL%20V3-blue)](https://opensource.org/licenses/AGPL-3.0)
-[![Docker](https://img.shields.io/badge/docker-support-%2300D1D1)](https://github.com/Checkmarx/capital/tree/capital-dev#quickstart) 
-
 
 Quick facts
 ----------
 
    - **Name**:      'c{api}tal'
    - **Type**:      Vulnerable API Security application
+   - **Purpose**:   Educational
    - **License**:   GNU AFFERO GENERAL PUBLIC LICENSE
    - **Language**:  Python, JS
    - **Author**:    Checkmarx Research team
@@ -209,7 +210,7 @@ See CONTRIBUTING.md for more information about how to submit them.
 Thanks
 ----------
 
-This project was created by [Ravid Mazon](https://www.linkedin.com/in/ravid-mazon) with the help of these great contributors: 
+This project was created at Checkmarx by [Ravid Mazon](https://www.linkedin.com/in/ravid-mazon) with the help of these great contributors: 
 [Liad Levy](https://www.linkedin.com/in/liad-levy-93b235211/),
 [Yaniv Nizry](https://www.linkedin.com/in/yaniv-n-8b4a76193/), 
 [Guy Lyuboshits](https://www.linkedin.com/in/guy-lyuboshits-075175165/)
