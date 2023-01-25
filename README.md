@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/capital-logo-white.PNG#center" width="600" height="300" />
+<img src=".github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
 [![API Security Top 10](https://img.shields.io/badge/API%20Security-top%2010-blue)](https://github.com/OWASP/API-Security) 
@@ -38,7 +38,7 @@ c{api}tal is a blogging application which allow users to register, create and de
 create and delete comments, follow other users, and more.
 
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/postman/API%20endpoints.PNG#center" width="1000" height="850" />
+<img src="postman/API%20endpoints.PNG#center" width="1000" height="850" />
 </p>
 
 # Quickstart
@@ -57,7 +57,7 @@ Import the API collection JSON file to POSTMAN and start generating API requests
 [click here to download the c{api}tal API json collection file](https://www.capital-ctf.com/files/de1ad03a48959f38c7f131f81f95d42e/capital.postman_collection.json)
 
 <p align="center">
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
+<img src=".github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
 </p>
 
 To run the web application in debug:
@@ -91,7 +91,8 @@ Then create ``.env`` file in project root and set environment variables for appl
 
 Then run the backend server:
 
-    python3 main.py
+    python3 
+    .py
 
 [Option 2] Run backend using docker
 Run the backend using docker build:
@@ -192,9 +193,9 @@ A great write-up by Maor Tal: <br>
 
 
 Stickers from DefCon30: <br>
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker1.png" width="300" height="150" />
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker2.png" width="300" height="150" />
-<img src="https://github.com/Checkmarx/capital/blob/capital-dev/.github/assets/sticker3.jpeg" width="300" height="150" />
+<img src=".github/assets/sticker1.png" width="300" height="150" />
+<img src=".github/assets/sticker2.png" width="300" height="150" />
+<img src=".github/assets/sticker3.jpeg" width="300" height="150" />
 
 
 Development and Bugs
