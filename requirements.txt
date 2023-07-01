@@ -8,7 +8,7 @@ loguru==0.6.0
 aiosql==5.0
 bcrypt==3.2.2
 passlib==1.7.4
-pydantic[email]==1.9.1
+pydantic[email]==2.0
 pyjwt==2.4.0
 pypika==0.48.9
 slugify==0.0.1
