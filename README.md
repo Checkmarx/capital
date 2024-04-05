@@ -22,8 +22,6 @@ The Checkmarx research team created c{api}tal to provide users with an active pl
 
 c{api}tal can also be used for conducting your own API Security CTF event.
 
-Visit [capital-ctf.com](https://www.capital-ctf.com/) to learn about the vulnerabilities and the challenges.
-
 Features:
 ----------
 Contains 10 challenges based on the <a href="https://owasp.org/www-project-api-security/" target="_blank">OWASP top 10 API risks</a>
