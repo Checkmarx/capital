@@ -51,8 +51,7 @@ The frontend will be running on http://localhost:4100/ <br>
 Check out the API endpoints specification page at http://localhost:8000/docs <br>
 
 Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example) <br>
-Import the API collection JSON file to POSTMAN and start generating API requests: <br>
-[click here to download the c{api}tal API json collection file](https://www.capital-ctf.com/files/de1ad03a48959f38c7f131f81f95d42e/capital.postman_collection.json)
+Import the API collection JSON file to POSTMAN and start generating API requests.
 
 <p align="center">
 <img src=".github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
