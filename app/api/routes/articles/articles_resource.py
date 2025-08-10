@@ -131,5 +131,5 @@ async def delete_article_by_slug(
     await articles_repo.delete_article(article=article)
     json_compatible_item_data = jsonable_encoder({"message": "Your article has been deleted"})
     if article.author.username != user.username:
-        json_compatible_item_data = jsonable_encoder({"message": strings.BOLA(), "description": strings.DescriptionBOLA})
+        json_compatible_item_data = jsonable_encoder({"message": strings.get_response_c(), "description": strings.Description_E})
     return JSONResponse(content=json_compatible_item_data)

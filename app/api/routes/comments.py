@@ -77,7 +77,7 @@ async def delete_comment_from_article(
         await comments_repo.delete_comment(comment=comment)
         json_compatible_item_data = jsonable_encoder({"message": "Your comment has been deleted"})
         if comment.author.username != user.username:
-            json_compatible_item_data = jsonable_encoder({"message": strings.BOLA(), "description": strings.DescriptionBOLA})
+            json_compatible_item_data = jsonable_encoder({"message": strings.get_response_c(), "description": strings.Description_E})
         return JSONResponse(content=json_compatible_item_data)
 
 

@@ -42,16 +42,16 @@ async def login(
         user,
         str(settings.secret_key.get_secret_value()),
     )
-    if user_login.email == "Pikachu@checkmarx.com":
+    if user_login.email == "system.user@app.internal":
         return CTFResponse(
-        flag=strings.BrokenUserAuthentication(),
-        description=strings.DescriptionBrokenUserAuthentication,
+        flag=strings.get_response_b(),
+        description=strings.Description_G,
         user=UserWithToken(
             username=user.username,
             email=user.email,
             image=user.image,
             token=token,
-            bio="THIS IS A TOP SECRET: This application is not logging and monitoring user's activities... You might wanna check the logging endpoint in the application.."
+            bio="User account configured for system operations"
         ),
     )
 

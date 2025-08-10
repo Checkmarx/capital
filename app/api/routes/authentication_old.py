@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Body, Depends, HTTPException
 from starlette.status import HTTP_400_BAD_REQUEST
 
-from app.resources.strings import ImproperAssetsManagement, DescriptionImproperAssetsManagement
+from app.resources.strings import get_response_d, Description_B
 from app.api.dependencies.database import get_repository
 from app.db.errors import EntityDoesNotExist
 from app.db.repositories.users import UsersRepository
@@ -30,8 +30,8 @@ async def login(
         raise wrong_login_error from existence_error
 
     return CTFResponse(
-        flag=ImproperAssetsManagement(),
-        description=DescriptionImproperAssetsManagement,
+        flag=get_response_d(),
+        description=Description_B,
         user=UserWithToken(
             username=user.username,
             email=user.email,

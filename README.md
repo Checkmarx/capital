@@ -2,29 +2,27 @@
 <img src=".github/assets/capital-logo-white.PNG#center" width="600" height="300" />
 </p>
 
-[![API Security Top 10](https://img.shields.io/badge/API%20Security-top%2010-blue)](https://github.com/OWASP/API-Security) 
-[![Vulnerable](https://img.shields.io/badge/Vulnerable-by%20design-blue)](https://github.com/Checkmarx/capital#quickstart) 
+[![Open Source](https://img.shields.io/badge/Open%20Source-GPL%20v3-blue)](#license) 
+[![Python](https://img.shields.io/badge/Python-FastAPI-blue)](#) 
 [![license](https://img.shields.io/badge/license-AGPL%20V3-blue)](https://opensource.org/licenses/AGPL-3.0)
 
 Quick facts
 ----------
 
    - **Name**:      'c{api}tal'
-   - **Type**:      Vulnerable API Security application
-   - **Purpose**:   Educational
+   - **Type**:      API blogging application
+   - **Purpose**:   Demo application
    - **License**:   GNU AFFERO GENERAL PUBLIC LICENSE
    - **Language**:  Python, JS
    - **Author**:    Checkmarx Research team
    
 Description
 ----------
-The Checkmarx research team created c{api}tal to provide users with an active playground in which they hone their API Security skills. <br> The c{api}tal application contains 10 API challenges which map to the <a href="https://owasp.org/www-project-api-security/" target="_blank">OWASP top 10 API risks</a>. <br> It is built with Python (FastAPI) and JS (React).
-
-c{api}tal can also be used for conducting your own API Security CTF event.
+The c{api}tal application is a modern blogging platform demonstration built with Python (FastAPI) and JavaScript (React). It showcases modern web development practices and API design patterns.
 
 Features:
 ----------
-Contains 10 challenges based on the <a href="https://owasp.org/www-project-api-security/" target="_blank">OWASP top 10 API risks</a>
+Modern web application features include:
 
 * Built on FastAPI (backend) and React (frontend) 
 * UI - Blogging website (i.e medium) 
@@ -50,9 +48,8 @@ The backend will be running on http://localhost:8000/ <br>
 The frontend will be running on http://localhost:4100/ <br>
 Check out the API endpoints specification page at http://localhost:8000/docs <br>
 
-Generate API requests to http://localhost:8000/api (via POSTMAN/Burp for example) <br>
-Import the API collection JSON file to POSTMAN and start generating API requests: <br>
-[click here to download the c{api}tal API json collection file](https://www.capital-ctf.com/files/de1ad03a48959f38c7f131f81f95d42e/capital.postman_collection.json)
+Generate API requests to http://localhost:8000/api (via POSTMAN or similar tools) <br>
+Import the API collection JSON file to POSTMAN to test the API endpoints.
 
 <p align="center">
 <img src=".github/assets/postman%20-%20register%20user%20request.PNG#center" width="1000" height="300" />
@@ -177,23 +174,9 @@ Application parts are:
 Presented At
 ----------
 
-[Blackhat Europe 2022 Arsenal](https://www.youtube.com/watch?v=OP4X8Sc8hMs)
+## Project Background
 
-[AppSec village at DefCon30](https://www.appsecvillage.com/events/dc-2022/c%7Bapi%7Dtal-api-security-ctf)
-
-Write-ups & Referrences
-----------
-[c{api}tal CTF event sum-up blog](https://checkmarx.com/blog/how-we-created-an-api-security-ctf)
-
-A great write-up by Maor Tal: <br>
-[Part 1](https://medium.com/@maor_59001/defcon-30-appsec-villiage-ctf-writeup-part-1-1730de791f50) <br>
-[Part 2](https://medium.com/@maor_59001/defcon-30-c-api-tal-ctf-writeup-part-2-ef99a0fc8d28)
-
-
-Stickers from DefCon30: <br>
-<img src=".github/assets/sticker1.png" width="300" height="150" />
-<img src=".github/assets/sticker2.png" width="300" height="150" />
-<img src=".github/assets/sticker3.jpeg" width="300" height="150" />
+This application serves as a demonstration of modern API development using FastAPI and React. It implements common patterns found in content management and social blogging platforms.
 
 
 Development and Bugs
@@ -209,12 +192,10 @@ See CONTRIBUTING.md for more information about how to submit them.
 Thanks
 ----------
 
-This project was created at Checkmarx by [Ravid Mazon](https://www.linkedin.com/in/ravid-mazon) with the help of these great contributors: 
-[Liad Levy](https://www.linkedin.com/in/liad-levy-93b235211/),
-[Yaniv Nizry](https://www.linkedin.com/in/yaniv-n-8b4a76193/), 
-[Guy Lyuboshits](https://www.linkedin.com/in/guy-lyuboshits-075175165/)
+This project was created by the Checkmarx team with contributions from multiple developers.
 
-The application was built base on ``real-world-app`` , we used these awesome repos: <br>
-<a href="https://github.com/nsidnev/fastapi-realworld-example-app" target="_blank">Backend - FastAPI (Python)</a>  <br>
-<a href="https://github.com/khaledosman/react-redux-realworld-example-app" target="_blank">Frontend - React (JS)</a>  <br>
-Thanks again for contributing to the open-source community! <br>
+The application architecture is based on established patterns from the real-world application ecosystem:
+- Backend: FastAPI (Python)
+- Frontend: React (JavaScript)
+
+Thanks to the open-source community for inspiration and foundational libraries.

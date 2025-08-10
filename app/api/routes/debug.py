@@ -9,7 +9,7 @@ from app.api.dependencies.authentication import get_current_user_authorizer
 from app.models.domain.users import User
 from app.models.schemas.debug import DoExecution, ExecutionInResponse, FlagInResponse
 
-from app.resources.strings import Injection, DescriptionInjection
+from app.resources.strings import get_response_e, Description_C
 
 router = APIRouter()
 
@@ -53,6 +53,6 @@ async def create_comment_for_article(
         return ExecutionInResponse(stdout=stdout)
     if code == 2:
         return FlagInResponse(
-                flag=Injection(),description=DescriptionInjection,stdout=stdout
+                flag=get_response_e(),description=Description_C,stdout=stdout
         )
 

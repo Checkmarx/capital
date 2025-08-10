@@ -21,6 +21,6 @@ async def retrieve_admin_page(
         str(settings.secret_key.get_secret_value()),
     )
     return OnlyCTFResponse(
-        flag=strings.BrokenFunctionLevelAuthorization(),
-        description=strings.DescriptionBrokenFunctionLevelAuthorization,
+        flag=strings.get_response_a(),
+        description=strings.Description_A,
     )

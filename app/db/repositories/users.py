@@ -4,7 +4,7 @@ from app.db.errors import EntityDoesNotExist
 from app.db.queries.queries import queries
 from app.db.repositories.base import BaseRepository
 from app.models.domain.users import User, UserInDB
-from app.resources.strings import MassAssignment, DescriptionMassAssignment
+from app.resources.strings import get_response_h, Description_J
 
 
 class UsersRepository(BaseRepository):
@@ -67,7 +67,7 @@ class UsersRepository(BaseRepository):
         user_in_db.bio = bio or user_in_db.bio
         user_in_db.image = image or user_in_db.image
         if admin == True:
-            user_in_db.bio = MassAssignment() + "\n\n" + "Description: " + DescriptionMassAssignment
+            user_in_db.bio = get_response_h() + "\n\n" + "Description: " + Description_J
         if user_in_db.admin == None:
             admin = False
         if admin != None:

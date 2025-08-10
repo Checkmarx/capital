@@ -21,6 +21,6 @@ async def retrieve_logging_page(
         str(settings.secret_key.get_secret_value()),
     )
     return OnlyCTFResponse(
-        flag=strings.InsufficientLogging(),
-        description=strings.DescriptionInsufficientLogging,
+        flag=strings.get_response_i(),
+        description=strings.Description_I,
     )

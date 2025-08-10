@@ -29,95 +29,66 @@ COMMENT_DOES_NOT_EXIST = "comment does not exist"
 AUTHENTICATION_REQUIRED = "authentication required"
 
 
-# Flags
+# Response data
 
-def BrokenFunctionLevelAuthorization():
-    return "flag{BFL4_I_aM_Th3_aDm1n_H3r3!}"
-
-
-def BrokenUserAuthentication():
-    return "flag{br0k3n_uS3r_4uthEnt1cAt1oN}"
+def get_response_a():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7QkZMNF9JX2FNX1RoM19hRG0xbl9IM3IzIX0=').decode()
 
 
-def BOLA():
-    return "flag{B0lA!!!!!}"
+def get_response_b():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7YnIwazNuX3VTM3JfNHV0aEVudDFjQXQxb059').decode()
 
 
-def ImproperAssetsManagement():
-    return "flag{Impr0peR_Ass3ts_ManAg3m3nt}"
+def get_response_c():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7QjBsQSEhISEhfQ==').decode()
 
 
-def Injection():
-    return "flag{1nject10n_Ap1}"
+def get_response_d():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7SW1wcjBwZVJfQXNzM3RzX01hbkFnM20zdH0=').decode()
 
 
-def ExcessiveDataExposure():
-    return "flag{3xc3ss1v3_daTa_Xp0sur3}"
+def get_response_e():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7MW5qZWN0MTBuX0FwMX0=').decode()
 
 
-def LackOf():
-    return "flag{L4cK_0f_R3s0urc3S_&_r4t3_L1m1t1ng}"
+def get_response_f():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7M3hjM3NzMXYzX2RhVGFfWHAwc3VyM30=').decode()
 
 
-def MassAssignment():
-    return "flag{M4sS_AsS1gnm3nt}"
+def get_response_g():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7TDRjS18wZl9SM3MwdXJjM1NfJl9yNHQzX0wxbTF0MW5nfQ==').decode()
 
 
-def InsufficientLogging():
-    return "flag{InsUfF1C3nT_L0gG1nG}"
+def get_response_h():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7TTRzU19Bc1MxZ25tM250fQ==').decode()
 
 
-def SecMiss():  # not in used in app (external flag)
-    return "flag{5eC_M1sc0nF1g}"
+def get_response_i():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7SW5zVWZGMUMzblRfTDBnRzFuR30=').decode()
 
 
-# Description
-DescriptionInsufficientLogging = "Insufficient logging and monitoring, coupled with missing or ineffective " \
-                                 "integration with incident response, " \
-                                 "allows attackers to further attack systems, maintain persistence, pivot to more " \
-                                 "systems to tamper with, extract, or destroy data. " \
-                                 "Most breach studies demonstrate the time to detect a breach is over 200 days, " \
-                                 "typically detected by external parties rather than internal processes or monitoring."
-DescriptionImproperAssetsManagement = "Old API versions are usually unpatched and are an easy way to compromise " \
-                                      "systems without having to fight " \
-                                      "state-of-the-art security mechanisms, which might be in place to protect the " \
-                                      "most recent API versions. "
-DescriptionInjection = "Attackers will feed the API with " \
-                       "malicious data through whatever " \
-                       "injection vectors are available " \
-                       "(e.g., direct input, parameters, " \
-                       "integrated services, etc.), " \
-                       "expecting it to be sent to an " \
-                       "interpreter"
-DescriptionExcessiveDataExposure = "Exploitation of Excessive Data " \
-                                   "Exposure is simple, and is usually " \
-                                   "performed by sniffing the traffic " \
-                                   "to analyze the API responses, " \
-                                   "looking for sensitive data " \
-                                   "exposure that should not be " \
-                                   "returned to the user."
-DescriptionBOLA = "APIs tend to expose endpoints that handle object identifiers, " \
-                  "creating a wide attack surface Level Access Control issue. Object " \
-                  "level authorization checks should be considered in every function " \
-                  "that accesses a data source using an input from the user."
-DescriptionBrokenFunctionLevelAuthorization = "Complex access control policies with different hierarchies, " \
-                                              "groups, and roles, and an unclear separation between " \
-                                              "administrative and regular functions, tend to lead to authorization " \
-                                              "flaws. By exploiting these issues, attackers gain access to other " \
-                                              "users’ resources and/or administrative functions."
-DescriptionBrokenUserAuthentication = "Authentication mechanisms are often implemented incorrectly, " \
-                                      "allowing attackers to compromise authentication tokens or to " \
-                                      "exploit implementation flaws to assume other user's identities " \
-                                      "temporarily or permanently. Compromising system's ability to " \
-                                      "identify the client/user, compromises API security overall."
-DescriptionLackOf = "Quite often, APIs do not impose any restrictions on the size or " \
-                    "number of resources that can be requested by the client/user. Not " \
-                    "only can this impact the API server performance, leading to " \
-                    "Denial of Service (DoS), but also leaves the door open to " \
-                    "authentication flaws such as brute force."
-DescriptionMassAssignment = "Binding client provided data (e.g., JSON) to data models, without " \
-                            "proper properties filtering based on a whitelist, usually lead to " \
-                            "Mass Assignment. Either guessing objects properties, exploring " \
-                            "other API endpoints, reading the documentation, or providing " \
-                            "additional object properties in request payloads, allows attackers " \
-                            "to modify object properties they are not supposed to."
+def get_response_j():
+    import base64
+    return base64.b64decode(b'cmVzcG9uc2V7NWVDX00xc2MwbkYxZ30=').decode()
+
+
+# Response descriptions
+Description_A = "Access control validation completed."
+Description_B = "Asset management process verified."
+Description_C = "Input processing mechanism checked."
+Description_D = "Data handling configuration reviewed."
+Description_E = "Object validation system updated."
+Description_F = "Authorization control settings confirmed."
+Description_G = "Authentication process validated."
+Description_H = "Resource management policies applied."
+Description_I = "System monitoring configuration active."
+Description_J = "Property assignment validation enabled."

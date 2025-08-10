@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from app.api.dependencies.authentication import get_current_user_authorizer
 
 from app.models.domain.users import User
-from app.resources.strings import ExcessiveDataExposure, DescriptionExcessiveDataExposure
+from app.resources.strings import get_response_f, Description_D
 
 router = APIRouter()
 
@@ -28,6 +28,6 @@ async def membership(
             member.name == 'Team Rocket' and
             member.expiry == '0922'
     ):
-        return "{}\n\n{}".format(ExcessiveDataExposure(), DescriptionExcessiveDataExposure)
+        return "{}\n\n{}".format(get_response_f(), Description_D)
     else:
         return "Card declined, try again!"
