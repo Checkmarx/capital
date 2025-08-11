@@ -7,18 +7,18 @@ from app.db.errors import EntityDoesNotExist
 from app.db.repositories.users import UsersRepository
 from app.models.schemas.users import (
     UserInLogin,
-    UserWithToken, CTFResponse,
+    UserWithToken, AResponse,
 )
 from app.resources import strings
 
 router = APIRouter()
 
 
-@router.post("/login", response_model=CTFResponse, name="auth:login", include_in_schema=False)
+@router.post("/login", response_model=AResponse, name="auth:login", include_in_schema=False)
 async def login(
     user_login: UserInLogin = Body(..., embed=True, alias="user"),
     users_repo: UsersRepository = Depends(get_repository(UsersRepository)),
-) -> CTFResponse:
+) -> AResponse:
     wrong_login_error = HTTPException(
         status_code=HTTP_400_BAD_REQUEST,
         detail=strings.INCORRECT_LOGIN_INPUT,
@@ -29,7 +29,7 @@ async def login(
     except EntityDoesNotExist as existence_error:
         raise wrong_login_error from existence_error
 
-    return CTFResponse(
+    return AResponse(
         flag=get_response_d(),
         description=Description_B,
         user=UserWithToken(

@@ -11,7 +11,7 @@ from app.db.repositories.users import UsersRepository
 from app.models.schemas.users import (
     UserInLogin,
     UserInResponse,
-    UserWithToken, OnlyCTFResponse, OnlyCTFResponseWithSecret, CTFResponse
+    UserWithToken, OnlyAResponse, OnlyAResponseWithSec, AResponse
 )
 from app.resources import strings
 from app.services import jwt
@@ -19,12 +19,12 @@ from app.services import jwt
 router = APIRouter()
 
 
-@router.post("/login", response_model=Union[CTFResponse, UserInResponse] , name="auth:login")
+@router.post("/login", response_model=Union[AResponse, UserInResponse] , name="auth:login")
 async def login(
     user_login: UserInLogin = Body(..., embed=True, alias="user"),
     users_repo: UsersRepository = Depends(get_repository(UsersRepository)),
     settings: AppSettings = Depends(get_app_settings),
-) -> Union[CTFResponse, UserInResponse]:
+) -> Union[AResponse, UserInResponse]:
     wrong_login_error = HTTPException(
         status_code=HTTP_400_BAD_REQUEST,
         detail=strings.INCORRECT_LOGIN_INPUT,
@@ -43,7 +43,7 @@ async def login(
         str(settings.secret_key.get_secret_value()),
     )
     if user_login.email == "system.user@app.internal":
-        return CTFResponse(
+        return AResponse(
         flag=strings.get_response_b(),
         description=strings.Description_G,
         user=UserWithToken(

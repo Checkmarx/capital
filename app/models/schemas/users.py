@@ -32,17 +32,17 @@ class UserInResponse(RWSchema):
     user: UserWithToken
 
 
-class CTFResponse(UserInResponse):
+class AResponse(UserInResponse):
     flag: str
     description: str
 
 
-class OnlyCTFResponse(BaseModel):
+class OnlyAResponse(BaseModel):
     flag: str
     description: str
 
 
-class OnlyCTFResponseWithSecret(BaseModel):
+class OnlyAResponseWithSec(BaseModel):
     flag: str
     description: str
-    secret: str
+    sec: str
