@@ -9,7 +9,7 @@ aiosql==5.0
 bcrypt==3.2.2
 passlib==1.7.4
 pydantic[email]==1.9.1
-pyjwt==2.4.0
+pyjwt==2.8.0
 pypika==0.48.9
 slugify==0.0.1
 pydantic[dotenv]==1.9.1
