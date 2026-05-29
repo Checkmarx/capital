@@ -35,7 +35,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Install Poetry
-        uses: snok/install-poetry@76e04a911780d5b312d89783f7b1cd627778900a # v1.4.1
+        uses: step-security/install-poetry@8cee588dbbc9ca4f2882c176ce61917303942193 # v1.4.2
         with:
           version: "1.1.12"
           virtualenvs-in-project: true
@@ -63,4 +63,4 @@ jobs:
           poetry run ./scripts/test
 
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@f32b3a3741e1053eb607407145bc9619351dc93b # v2.1.0
+        uses: step-security/codecov-action@87e66f47a0f8ab4cae465a323eb9ec63d8b6b875 # v6.0.1
